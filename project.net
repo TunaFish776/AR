@@ -1,0 +1,359 @@
+autostart = False
+version = 0.8.3
+[127.0.0.1:7200]
+    workingdir = /tmp
+    udp = 10000
+    [[3725]]
+        image = /home/jonnybel/AR/Pratica/c3725-advipservicesk9-mz.124-21.image
+        ram = 128
+        idlepc = 0x60a6a1e0
+        sparsemem = True
+        ghostios = True
+    [[ETHSW SW11]]
+        1 = access 1 R7 f1/5
+        2 = access 1 R8 f1/5
+        x = 640.5
+        y = -208.0
+        z = 1.0
+    [[ETHSW SW10]]
+        1 = access 1 R7 f1/4
+        2 = access 1 R8 f1/4
+        x = 458.5
+        y = -210.0
+        z = 1.0
+    [[ROUTER R4]]
+        model = 3725
+        console = 2016
+        aux = 2516
+        f0/0 = R5 f1/3
+        f0/1 = R11 f1/3
+        slot1 = NM-16ESW
+        f1/0 = R1 f0/1
+        f1/1 = R2 f0/1
+        f1/10 = R3 f1/10
+        symbol = EtherSwitch router
+        x = 200.77416998
+        y = 327.224963469
+        z = 1.0
+    [[ROUTER R5]]
+        model = 3725
+        console = 2017
+        aux = 2517
+        f0/0 = R7 f1/11
+        f0/1 = R8 f1/11
+        slot1 = NM-16ESW
+        f1/0 = R9 f0/0
+        f1/1 = R10 f0/0
+        f1/2 = R3 f0/0
+        f1/3 = R4 f0/0
+        symbol = EtherSwitch router
+        x = -170.401586978
+        y = 162.649278299
+        z = 1.0
+    [[ROUTER R7]]
+        model = 3725
+        console = 2019
+        aux = 2519
+        f0/0 = SW3 1
+        f0/1 = SW5 1
+        slot1 = NM-16ESW
+        f1/0 = SW6 1
+        f1/1 = SW7 1
+        f1/2 = SW8 1
+        f1/3 = SW9 1
+        f1/4 = SW10 1
+        f1/5 = SW11 1
+        f1/10 = R8 f1/10
+        f1/11 = R5 f0/0
+        f1/12 = R11 f0/0
+        symbol = EtherSwitch router
+        x = -250.269552622
+        y = -16.7994231491
+        z = 1.0
+    [[ROUTER R1]]
+        model = 3725
+        console = 2013
+        aux = 2513
+        f0/0 = R3 f1/0
+        f0/1 = R4 f1/0
+        slot1 = NM-1FE-TX
+        f1/0 = R2 f1/0
+        slot2 = NM-1FE-TX
+        x = 8.26493526371
+        y = 463.688383542
+        z = 1.0
+    [[ROUTER R2]]
+        model = 3725
+        console = 2014
+        aux = 2514
+        f0/0 = R3 f1/1
+        f0/1 = R4 f1/1
+        slot1 = NM-1FE-TX
+        f1/0 = R1 f1/0
+        slot2 = NM-1FE-TX
+        x = 177.717820794
+        y = 472.974746831
+        z = 1.0
+    [[ROUTER R3]]
+        model = 3725
+        console = 2015
+        aux = 2515
+        f0/0 = R5 f1/2
+        f0/1 = R11 f1/2
+        slot1 = NM-16ESW
+        f1/0 = R1 f0/0
+        f1/1 = R2 f0/0
+        f1/10 = R4 f1/10
+        symbol = EtherSwitch router
+        x = 7.02691193458
+        y = 310.25440072
+        z = 1.0
+    [[ROUTER R8]]
+        model = 3725
+        console = 2020
+        aux = 2520
+        f0/0 = SW3 2
+        f0/1 = SW5 2
+        slot1 = NM-16ESW
+        f1/0 = SW6 2
+        f1/1 = SW7 2
+        f1/2 = SW8 2
+        f1/3 = SW9 2
+        f1/4 = SW10 2
+        f1/5 = SW11 2
+        f1/10 = R7 f1/10
+        f1/11 = R5 f0/1
+        f1/12 = R11 f0/1
+        symbol = EtherSwitch router
+        x = 21.7304473783
+        y = -14.7994231491
+        z = 1.0
+    [[ROUTER R9]]
+        model = 3725
+        console = 2021
+        aux = 2521
+        f0/0 = R5 f1/0
+        f0/1 = R11 f1/0
+        slot1 = NM-16ESW
+        f1/0 = SW1 1
+        f1/1 = SW2 1
+        f1/10 = R10 f1/10
+        symbol = EtherSwitch router
+        x = -364.269552622
+        y = 307.200576851
+        z = 1.0
+    [[ETHSW SW9]]
+        1 = access 1 R7 f1/3
+        2 = access 1 R8 f1/3
+        x = 194.5
+        y = -228.0
+        z = 1.0
+    [[ETHSW SW8]]
+        1 = access 1 R7 f1/2
+        2 = access 1 R8 f1/2
+        x = 34.5
+        y = -234.0
+        z = 1.0
+    [[ETHSW SW1]]
+        1 = access 1 R9 f1/0
+        2 = access 1 R10 f1/0
+        x = -378.269552622
+        y = 466.700576851
+        z = 1.0
+    [[ETHSW SW3]]
+        1 = access 1 R7 f0/0
+        2 = access 1 R8 f0/0
+        x = -759.632034356
+        y = -191.583694397
+        z = 1.0
+        hx = 10.2265625
+        hy = -31.0
+    [[ETHSW SW2]]
+        1 = access 1 R9 f1/1
+        2 = access 1 R10 f1/1
+        x = -218.269552622
+        y = 450.700576851
+        z = 1.0
+    [[ETHSW SW5]]
+        1 = access 1 R7 f0/1
+        2 = access 1 R8 f0/1
+        x = -595.798556597
+        y = -193.338095117
+        z = 1.0
+    [[ETHSW SW7]]
+        1 = access 1 R7 f1/1
+        2 = access 1 R8 f1/1
+        x = -183.5
+        y = -210.0
+        z = 1.0
+    [[ETHSW SW6]]
+        1 = access 1 R7 f1/0
+        2 = access 1 R8 f1/0
+        x = -311.5
+        y = -204.0
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = /tmp
+    udp = 10100
+    [[3725]]
+        image = /home/jonnybel/AR/Pratica/c3725-advipservicesk9-mz.124-21.image
+        ram = 128
+        idlepc = 0x60a6a1e0
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R10]]
+        model = 3725
+        console = 2022
+        aux = 2522
+        f0/0 = R5 f1/1
+        f0/1 = R11 f1/1
+        slot1 = NM-16ESW
+        f1/0 = SW1 2
+        f1/1 = SW2 2
+        f1/10 = R9 f1/10
+        symbol = EtherSwitch router
+        x = -198.269552622
+        y = 319.200576851
+        z = 1.0
+    [[ROUTER R11]]
+        model = 3725
+        console = 2023
+        aux = 2523
+        f0/0 = R7 f1/12
+        f0/1 = R8 f1/12
+        slot1 = NM-16ESW
+        f1/0 = R9 f0/1
+        f1/1 = R10 f0/1
+        f1/2 = R3 f0/1
+        f1/3 = R4 f0/1
+        symbol = EtherSwitch router
+        x = -18.2695526217
+        y = 157.200576851
+        z = 1.0
+[GNS3-DATA]
+    m11 = 0.5
+    m22 = 0.5
+    [[NOTE 1]]
+        text = "Piso 1"
+        x = -776.0
+        y = -352.5
+        color = "#3c3c3c"
+    [[NOTE 2]]
+        text = "Piso 4"
+        x = 428.0
+        y = -354.5
+        color = "#3c3c3c"
+    [[NOTE 3]]
+        text = "Piso 2"
+        x = -382.0
+        y = -358.5
+        color = "#3c3c3c"
+    [[NOTE 4]]
+        text = "Piso 3"
+        x = 9.99999999999
+        y = -362.5
+        color = "#3c3c3c"
+    [[Cloud C16]]
+        symbol = Host
+        x = 689.500000001
+        y = -311.5
+        z = 1.0
+    [[Cloud C15]]
+        symbol = Host
+        x = 593.5
+        y = -311.5
+        z = 1.0
+    [[Cloud C14]]
+        symbol = Host
+        x = 487.5
+        y = -303.5
+        z = 1.0
+    [[Cloud C13]]
+        symbol = Host
+        x = 409.5
+        y = -299.5
+        z = 1.0
+    [[Cloud C12]]
+        symbol = Host
+        x = 249.5
+        y = -323.5
+        z = 1.0
+    [[Cloud C11]]
+        symbol = Host
+        x = 175.5
+        y = -329.5
+        z = 1.0
+    [[Cloud C10]]
+        symbol = Host
+        x = 85.5000000001
+        y = -315.5
+        z = 1.0
+    [[Cloud C9]]
+        symbol = Host
+        x = -4.49999999998
+        y = -311.5
+        z = 1.0
+    [[Cloud C8]]
+        symbol = Host
+        x = -124.5
+        y = -303.5
+        z = 1.0
+    [[Cloud C7]]
+        symbol = Host
+        x = -204.5
+        y = -309.5
+        z = 1.0
+    [[Cloud C6]]
+        symbol = Host
+        x = -290.5
+        y = -301.5
+        z = 1.0
+    [[Cloud C5]]
+        symbol = Host
+        x = -376.5
+        y = -297.5
+        z = 1.0
+    [[Cloud C4]]
+        symbol = Host
+        x = -546.5
+        y = -311.5
+        z = 1.0
+    [[Cloud C3]]
+        symbol = Host
+        x = -630.5
+        y = -305.5
+        z = 1.0
+    [[Cloud C2]]
+        symbol = Host
+        x = -724.500000001
+        y = -301.5
+        z = 1.0
+    [[Cloud C1]]
+        symbol = Host
+        x = -800.500000001
+        y = -299.5
+        z = 1.0
+    [[SHAPE 1]]
+        type = rectangle
+        x = -412.0
+        y = -372.0
+        width = 368.0
+        height = 230.0
+    [[SHAPE 2]]
+        type = rectangle
+        x = -810.0
+        y = -366.0
+        width = 346.0
+        height = 226.0
+    [[SHAPE 3]]
+        type = rectangle
+        x = 396.0
+        y = -374.0
+        width = 374.000000001
+        height = 224.0
+    [[SHAPE 4]]
+        type = rectangle
+        x = -8.0
+        y = -376.0
+        width = 348.0
+        height = 224.0
